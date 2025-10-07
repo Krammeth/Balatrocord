@@ -261,6 +261,30 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
     background: transparent;
 }
 
+/* left tab (DMs & channels) */
+.sidebar_c48ade {
+    overflow: visible;
+}
+
+.sidebarList_c48ade {
+    position: relative;
+    top: -32px;
+    border-radius: unset;
+    border: 3px solid #EA483E;
+    border-top: unset;
+    background: #2E3A3C;
+
+    > .privateChannels__35e86,
+    > .container__2637a {
+        top: 32px;
+        background: unset;
+
+        > .scroller__99e7c {
+            background: unset;
+        }
+    }
+}
+
 /* chat transparency */
 .chatContent_f75fb0,
 .chat_f75fb0 {
