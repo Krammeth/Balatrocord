@@ -130,19 +130,16 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
 /* MESSAGES  - - - - - - - - - - - - - - - - - - - - - */
 .contents_c19a55>.messageContent_c19a55 {
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: rgb(255, 246, 244);
     width: fit-content;
     margin-left: 0px !important;
     padding-left: 0px !important;
     padding: 14px !important;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
     box-sizing: content-box;
     max-width: 100%;
     word-wrap: normal;
-}
-
-.groupStart__5126c .messageContent_c19a55 {
-    border-radius: 10px 10px 10px 0px;
+    color: black!important
 }
 
 .message__5126c,
@@ -183,15 +180,6 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
         .avatarDecoration_c19a55 {
             left: auto !important;
             right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
-        }
-
-        .contents_c19a55>.messageContent_c19a55 {
-            border-radius: 10px 0px 0px 10px;
-            background-color: var(--brand-500);
-        }
-
-        &.groupStart__5126c .messageContent_c19a55 {
-            border-radius: 10px 10px 0px 10px;
         }
 
         .container_b7e1cb>* {
@@ -300,9 +288,36 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
                     >.linkButton__972a0>.link__972a0 {
                         padding: 8px;
-                        background-color: #FF8F00;
-                        border-radius: 10px;
-                        border-bottom: 3px solid #723B0A;
+                        margin: 4px;
+                        z-index: 2;
+                        overflow: visible;
+
+                        &::after {
+                            top: 8px;
+                            left: 0px;
+                            content: "";
+                            width: calc(100%);
+                            height: calc(100% - 16px);
+                            position: absolute;
+                            background: #ff8f00;
+                            border-bottom: 3px solid #723B0A;
+                        }
+
+                        &::before {
+                            left: 6px;
+                            top: 2px;
+                            content: "";
+                            width: calc(100% - 12px);
+                            height: calc(100% - 4px);
+                            position: absolute;
+                            background: #FF8F00;
+                            border-bottom: 3px solid #723B0A;
+                            z-index: 1;
+                        }
+
+                        .layout__20a53 {
+                            z-index: 2;
+                        }
 
                         >.avatarWithText__972a0 {
                             padding: 1px;
@@ -310,7 +325,7 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                             >.avatar__20a53 {
                                 margin: unset;
 
-                                >svg { 
+                                >svg {
                                     color: white;
                                     filter: drop-shadow(0 3px #784600)
                                 }
@@ -357,4 +372,62 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
         padding: 8px;
         border-radius: 8px;
     }
+}
+
+
+.wrapper_cc5dd2 {
+    background: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 3px #a6b8ce;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -3px;
+        top: -3px;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        border-radius: 13px;
+        background-image: linear-gradient(to bottom, #e3f0ff 0%, #e3f0ff 50%, #586473 100%);
+    }
+
+    .childWrapper__6e9f8, .circleIcon__5bc7e {
+        color: green;
+    }
+}
+
+.wrapper__6e9f8::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 4;
+    width: calc(100%);
+    height: calc(100%);
+    box-shadow: inset 0px 0px 0px 3px #a6b8ce;
+    border-radius: 9px;
+}
+
+.icon__6e9f8 {
+    scale: calc(35 / 40);
+}
+
+.lowerBadge_cc5dd2 {
+            rotate: 30deg;
+            box-sizing: border-box;
+    color: var(--white);
+    flex: 0 0 auto;
+        background-color: #ea483e;
+        aspect-ratio: 1;
+    .numberBadge__2b1f5 {
+        border-radius: 0px;
+        rotate: -30deg;
+        background: transparent!important;
+        height: 100%;
+    }
+}
+
+.svg_cc5dd2 foreignObject {
+    mask: none!important;
 }
