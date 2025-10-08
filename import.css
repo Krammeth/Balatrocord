@@ -273,17 +273,30 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
         background: transparent;
 
         /* Balatro Icon */
-        .tree_ef3116 .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
+        .tree_ef3116 {
+            .stack_dbd263 > .folderGroup__48112 .folderHeader__48112 .folderIcon__48112 > svg {
+                &::after {
+                    content: "";
+                    position: relative;
+                }
+
+                > path {
+                    display: none;
+                }
+            }
+            
+            
+            .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
             background-image: url(./assets/Jimbo.webp);
             background-color: transparent !important;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: 75%;
 
             >svg {
                 display: none;
             }
-        }
+        }}
     }
 
 
