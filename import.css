@@ -20,8 +20,8 @@
                 rgb(0 0 0 / var(--crt-transparency)),
                 transparent, transparent);
         background-size: 100% 6.5px, cover;
-        mask-image: radial-gradient(circle at center, 
-                black 60%, 
+        mask-image: radial-gradient(circle at center,
+                black 60%,
                 rgb(0 0 0 / 0.5));
         backdrop-filter: blur(0.4px);
         /* background */
@@ -274,16 +274,50 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
     border-top: unset;
     background: #2E3A3C;
 
-    > .privateChannels__35e86,
-    > .container__2637a {
+    >.privateChannels__35e86,
+    >.container__2637a {
         top: 32px;
         background: unset;
 
-        > .scroller__99e7c {
+        /* DMs scroller */
+        >.scroller__99e7c {
             background: unset;
+
+            >.content_d125d2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: space-evenly;
+
+                >div:not([class]):first-child {
+                    width: 100%;
+                }
+
+                .channel__972a0:not(.dm__972a0) {
+                    margin: 0 4px;
+
+                    >.linkButton__972a0>.link__972a0 {
+                        padding: 8px;
+
+                        >.avatarWithText__972a0 {
+                            padding: 1px;
+
+                            >.avatar__20a53 {
+                                margin: unset;
+                            }
+
+                            >.content__20a53 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 
 /* chat transparency */
 .chatContent_f75fb0,
