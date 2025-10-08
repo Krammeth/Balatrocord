@@ -273,22 +273,19 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
         background: transparent;
 
         /* Balatro Icon */
-        .tutorialContainer__1f388>.listItem__650eb {
-            >.listItemWrapper__91816>.wrapper_cc5dd2>.shiftSVG_cc5dd2>foreignObject[mask="url(#:r9:)"] {
-                >.wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
-                    background-image: url(./assets/Jimbo.webp);
-                    background-color: transparent !important;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 100% 100%;
+        .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
+            background-image: url(./assets/Jimbo.webp);
+            background-color: transparent !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
 
-                    >svg {
-                        display: none;
-                    }
-                }
+            >svg {
+                display: none;
             }
         }
     }
+
 
     /* DMs and Channels */
     >.sidebarList_c48ade {
