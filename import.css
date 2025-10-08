@@ -5,6 +5,24 @@
     --crt-speed: 5s;
     --crt-blur: 0.4px;
 }
+/** bodge number 1: secure contain protect
+* this makes sure stuff doesnt overdraw
+* this will break fixed elems, so if we ever do a one, uh we hwill have to disable that specific contain
+*/
+.members_c8ffbb,
+.guilds_c48ade,
+.chatContent_f75fb0,
+.sidebarList_c48ade,
+.layerContainer_da8173,
+.app__160d8 {
+  contain: strict !important;
+}
+
+.typingDots_b88801,
+.vc-typing-indicator-dots {
+  contain: paint !important;
+}
+
 
 @container style(--crt: on) {
     body::after {
