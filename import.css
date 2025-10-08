@@ -273,7 +273,7 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
         background: transparent;
 
         /* Balatro Icon */
-        .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
+        .tree_ef3116 .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
             background-image: url(./assets/Jimbo.webp);
             background-color: transparent !important;
             background-position: center;
