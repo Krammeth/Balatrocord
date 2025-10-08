@@ -323,33 +323,12 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                         padding: unset;
 
                         >.linkButton__972a0>.link__972a0 {
-                            padding: 8px;
+                            padding: 8px 12px;
                             margin: 4px;
                             z-index: 2;
                             overflow: visible;
-
-                            &::after {
-                                top: 8px;
-                                left: 0px;
-                                content: "";
-                                width: calc(100%);
-                                height: calc(100% - 16px);
-                                position: absolute;
-                                background: #ff8f00;
-                                border-bottom: 3px solid #723B0A;
-                            }
-
-                            &::before {
-                                left: 6px;
-                                top: 2px;
-                                content: "";
-                                width: calc(100% - 12px);
-                                height: calc(100% - 4px);
-                                position: absolute;
-                                background: #FF8F00;
-                                border-bottom: 3px solid #723B0A;
-                                z-index: 1;
-                            }
+                            background: a;
+                            clip-path: polygon(0px calc(100% - 12px),3px calc(100% - 12px),3px calc(100% - 6px),6px calc(100% - 6px),6px calc(100% - 3px),12px calc(100% - 3px),12px 100%,calc(100% - 12px) 100%,calc(100% - 12px) calc(100% - 3px),calc(100% - 6px) calc(100% - 3px),calc(100% - 6px) calc(100% - 6px),calc(100% - 3px) calc(100% - 6px),calc(100% - 3px) calc(100% - 12px),100% calc(100% - 12px),100% 12px,calc(100% - 3px) 12px,calc(100% - 3px) 6px,calc(100% - 6px) 6px,calc(100% - 6px) 3px,calc(100% - 12px) 3px,calc(100% - 12px) 0px,12px 0px,12px 3px,6px 3px,6px 6px,3px 6px,3px 12px,0px 12px);
 
                             .layout__20a53 {
                                 z-index: 2;
@@ -363,7 +342,7 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
                                     >svg {
                                         color: white;
-                                        filter: drop-shadow(0 3px #784600)
+                                        filter: drop-shadow(3px 4px 0 #00000087)
                                     }
                                 }
 
