@@ -274,32 +274,32 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
         /* Balatro Icon */
         .tree_ef3116 {
-            .stack_dbd263 > .folderGroup__48112 .folderHeader__48112 .folderIcon__48112  {
-                &::after {
-                    content: "";
-                    position: relative;
-                    width: 40px;
-                    height: 40px;
-                    background: red;
-                }
+            .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
+                background-image: url(./assets/Jimbo.webp);
+                background-color: transparent !important;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 75%;
 
-                > svg {
+                >svg {
                     display: none;
                 }
             }
-            
-            
-            .wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
-            background-image: url(./assets/Jimbo.webp);
-            background-color: transparent !important;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 75%;
+        }
+
+        .stack_dbd263>.folderGroup__48112 .folderHeader__48112 .folderIcon__48112 {
+            &::after {
+                content: "";
+                position: relative;
+                width: 40px;
+                height: 40px;
+                background: red;
+            }
 
             >svg {
                 display: none;
             }
-        }}
+        }
     }
 
 
