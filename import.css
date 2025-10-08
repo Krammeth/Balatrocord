@@ -274,7 +274,7 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
         /* Balatro Icon */
         .tree_ef3116 {
-            .stack_dbd263 > .folderGroup__48112 .folderHeader__48112 .folderIcon__48112 > svg {
+            .stack_dbd263 > .folderGroup__48112 .folderHeader__48112 .folderIcon__48112  {
                 &::after {
                     content: "";
                     position: relative;
@@ -283,8 +283,8 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                     background: red;
                 }
 
-                > path {
-                    display: ;
+                > svg {
+                    display: none;
                 }
             }
             
