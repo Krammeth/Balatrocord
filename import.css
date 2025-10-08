@@ -278,6 +278,9 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                 &::after {
                     content: "";
                     position: relative;
+                    width: 40px;
+                    height: 40px;
+                    background: red;
                 }
 
                 > path {
