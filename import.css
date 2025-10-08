@@ -296,15 +296,24 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
 
                 .channel__972a0:not(.dm__972a0) {
                     margin: 0 4px;
+                    padding: unset;
 
                     >.linkButton__972a0>.link__972a0 {
                         padding: 8px;
+                        background-color: #FF8F00;
+                        border-radius: 10px;
+                        border-bottom: 3px solid #723B0A;
 
                         >.avatarWithText__972a0 {
                             padding: 1px;
 
                             >.avatar__20a53 {
                                 margin: unset;
+
+                                >svg { 
+                                    color: white;
+                                    filter: drop-shadow(0 3px #784600)
+                                }
                             }
 
                             >.content__20a53 {
@@ -312,6 +321,15 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                             }
                         }
                     }
+                }
+
+                >div[role="button"],
+                .privateChannelsHeaderContainer__99e7c {
+                    width: 100%;
+                }
+
+                >.channel__972a0.dm__972a0 {
+                    width: 100%;
                 }
             }
         }
