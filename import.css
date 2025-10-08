@@ -5,6 +5,7 @@
     --crt-speed: 5s;
     --crt-blur: 0.4px;
 }
+
 /** bodge number 1: secure contain protect
 * this makes sure stuff doesnt overdraw
 * this will break fixed elems, so if we ever do a one, uh we hwill have to disable that specific contain
@@ -15,12 +16,12 @@
 .sidebarList_c48ade,
 .layerContainer_da8173,
 .app__160d8 {
-  contain: strict !important;
+    contain: strict !important;
 }
 
 .typingDots_b88801,
 .vc-typing-indicator-dots {
-  contain: paint !important;
+    contain: paint !important;
 }
 
 
@@ -322,32 +323,37 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
                         margin: 0 4px;
                         padding: unset;
 
-                        >.linkButton__972a0>.link__972a0 {
-                            padding: 8px 12px;
-                            margin: 4px;
-                            z-index: 2;
-                            overflow: visible;
-                            background: #ff9500;
-                            clip-path: polygon(0px calc(100% - 12px),3px calc(100% - 12px),3px calc(100% - 6px),6px calc(100% - 6px),6px calc(100% - 3px),12px calc(100% - 3px),12px 100%,calc(100% - 12px) 100%,calc(100% - 12px) calc(100% - 3px),calc(100% - 6px) calc(100% - 3px),calc(100% - 6px) calc(100% - 6px),calc(100% - 3px) calc(100% - 6px),calc(100% - 3px) calc(100% - 12px),100% calc(100% - 12px),100% 12px,calc(100% - 3px) 12px,calc(100% - 3px) 6px,calc(100% - 6px) 6px,calc(100% - 6px) 3px,calc(100% - 12px) 3px,calc(100% - 12px) 0px,12px 0px,12px 3px,6px 3px,6px 6px,3px 6px,3px 12px,0px 12px);
+                        >.linkButton__972a0 {
+                            filter: drop-shadow(0px 4px 0px #944500ba);
 
-                            .layout__20a53 {
+                            >.link__972a0 {
+                                padding: 8px 12px;
+                                margin: 4px;
                                 z-index: 2;
-                            }
+                                overflow: visible;
+                                background: #ff9500;
+                                /* thanks to the Balatro Wiki for this :3 */
+                                clip-path: polygon(0px calc(100% - 12px), 3px calc(100% - 12px), 3px calc(100% - 6px), 6px calc(100% - 6px), 6px calc(100% - 3px), 12px calc(100% - 3px), 12px 100%, calc(100% - 12px) 100%, calc(100% - 12px) calc(100% - 3px), calc(100% - 6px) calc(100% - 3px), calc(100% - 6px) calc(100% - 6px), calc(100% - 3px) calc(100% - 6px), calc(100% - 3px) calc(100% - 12px), 100% calc(100% - 12px), 100% 12px, calc(100% - 3px) 12px, calc(100% - 3px) 6px, calc(100% - 6px) 6px, calc(100% - 6px) 3px, calc(100% - 12px) 3px, calc(100% - 12px) 0px, 12px 0px, 12px 3px, 6px 3px, 6px 6px, 3px 6px, 3px 12px, 0px 12px);
 
-                            >.avatarWithText__972a0 {
-                                padding: 1px;
-
-                                >.avatar__20a53 {
-                                    margin: unset;
-
-                                    >svg {
-                                        color: white;
-                                        filter: drop-shadow(3px 4px 0 #00000087)
-                                    }
+                                .layout__20a53 {
+                                    z-index: 2;
                                 }
 
-                                >.content__20a53 {
-                                    display: none;
+                                >.avatarWithText__972a0 {
+                                    padding: 1px;
+
+                                    >.avatar__20a53 {
+                                        margin: unset;
+
+                                        >svg {
+                                            color: white;
+                                            filter: drop-shadow(3px 4px 0 #00000087)
+                                        }
+                                    }
+
+                                    >.content__20a53 {
+                                        display: none;
+                                    }
                                 }
                             }
                         }
