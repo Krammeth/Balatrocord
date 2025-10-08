@@ -112,7 +112,8 @@ li.messageListItem__5126c[id$="6"] .messageContent_c19a55 {
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2));
 
     box-shadow: inset 0px 0px 10px rgb(255, 255, 255, 0.5);
-color: white!important;
+    color: white !important;
+
     .messageContent_c19a55 {
         filter: drop-shadow(2px 2px 2px black);
     }
@@ -139,7 +140,7 @@ color: white!important;
     box-sizing: content-box;
     max-width: 100%;
     word-wrap: normal;
-    color: black!important
+    color: black !important
 }
 
 .message__5126c,
@@ -244,112 +245,132 @@ color: white!important;
     background: url(./balatrocord-background.webp) center/cover;
 }
 
-/* guild transparency */
-.guilds_c48ade {
-    background: transparent;
-}
-
-/* left tab (DMs & channels) */
+/* left tab */
 .sidebar_c48ade {
     overflow: visible;
-}
 
-.sidebarList_c48ade {
-    position: relative;
-    top: -32px;
-    border-radius: unset;
-    border: 3px solid #EA483E;
-    border-top: unset;
-    background: #2E3A3C;
+    /* Guilds */
+    >.guilds_c48ade {
+        background: transparent;
 
-    >.privateChannels__35e86,
-    >.container__2637a {
-        top: 32px;
-        background: unset;
+        /* Balatro Icon */
+        >.tree_ef3116>.itemsContainer_ef3116>.scroller_ef3116>.tutorialContainer__1f388>.listItem__650eb {
+            >.listItemWrapper__91816>.wrapper_cc5dd2>.shiftSVG_cc5dd2>foreignObject[mask="url(#:r9:)"] {
+                >.wrapper__6e9f8[data-list-item-id=guildsnav___home]>.childWrapper__6e9f8 {
+                    background-image: url(./assets/Jimbo.webp);
+                    background-color: transparent !important;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
 
-        /* DMs scroller */
-        >.scroller__99e7c {
+                    >svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* DMs and Channels */
+    >.sidebarList_c48ade {
+        position: relative;
+        top: -32px;
+        border-radius: unset;
+        border: 3px solid #EA483E;
+        border-top: unset;
+        background: #2E3A3C;
+
+        >.privateChannels__35e86,
+        >.container__2637a {
+            top: 32px;
             background: unset;
 
-            >.content_d125d2 {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-content: flex-start;
-                justify-content: space-evenly;
+            /* DMs scroller */
+            >.scroller__99e7c {
+                background: unset;
 
-                >div:not([class]):first-child {
-                    width: 100%;
-                }
+                >.content_d125d2 {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    justify-content: space-evenly;
 
-                .channel__972a0:not(.dm__972a0) {
-                    margin: 0 4px;
-                    padding: unset;
+                    >div:not([class]):first-child {
+                        width: 100%;
+                    }
 
-                    >.linkButton__972a0>.link__972a0 {
-                        padding: 8px;
-                        margin: 4px;
-                        z-index: 2;
-                        overflow: visible;
+                    .channel__972a0:not(.dm__972a0) {
+                        margin: 0 4px;
+                        padding: unset;
 
-                        &::after {
-                            top: 8px;
-                            left: 0px;
-                            content: "";
-                            width: calc(100%);
-                            height: calc(100% - 16px);
-                            position: absolute;
-                            background: #ff8f00;
-                            border-bottom: 3px solid #723B0A;
-                        }
-
-                        &::before {
-                            left: 6px;
-                            top: 2px;
-                            content: "";
-                            width: calc(100% - 12px);
-                            height: calc(100% - 4px);
-                            position: absolute;
-                            background: #FF8F00;
-                            border-bottom: 3px solid #723B0A;
-                            z-index: 1;
-                        }
-
-                        .layout__20a53 {
+                        >.linkButton__972a0>.link__972a0 {
+                            padding: 8px;
+                            margin: 4px;
                             z-index: 2;
-                        }
+                            overflow: visible;
 
-                        >.avatarWithText__972a0 {
-                            padding: 1px;
-
-                            >.avatar__20a53 {
-                                margin: unset;
-
-                                >svg {
-                                    color: white;
-                                    filter: drop-shadow(0 3px #784600)
-                                }
+                            &::after {
+                                top: 8px;
+                                left: 0px;
+                                content: "";
+                                width: calc(100%);
+                                height: calc(100% - 16px);
+                                position: absolute;
+                                background: #ff8f00;
+                                border-bottom: 3px solid #723B0A;
                             }
 
-                            >.content__20a53 {
-                                display: none;
+                            &::before {
+                                left: 6px;
+                                top: 2px;
+                                content: "";
+                                width: calc(100% - 12px);
+                                height: calc(100% - 4px);
+                                position: absolute;
+                                background: #FF8F00;
+                                border-bottom: 3px solid #723B0A;
+                                z-index: 1;
+                            }
+
+                            .layout__20a53 {
+                                z-index: 2;
+                            }
+
+                            >.avatarWithText__972a0 {
+                                padding: 1px;
+
+                                >.avatar__20a53 {
+                                    margin: unset;
+
+                                    >svg {
+                                        color: white;
+                                        filter: drop-shadow(0 3px #784600)
+                                    }
+                                }
+
+                                >.content__20a53 {
+                                    display: none;
+                                }
                             }
                         }
                     }
-                }
 
-                >div[role="button"],
-                .privateChannelsHeaderContainer__99e7c {
-                    width: 100%;
-                }
+                    >div[role="button"],
+                    .privateChannelsHeaderContainer__99e7c {
+                        width: 100%;
+                    }
 
-                >.channel__972a0.dm__972a0 {
-                    width: 100%;
+                    >.channel__972a0.dm__972a0 {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
 }
+
+
 
 
 /* chat transparency */
@@ -393,7 +414,8 @@ color: white!important;
         background-image: linear-gradient(to bottom, #e3f0ff 0%, #e3f0ff 50%, #586473 100%);
     }
 
-    .childWrapper__6e9f8, .circleIcon__5bc7e {
+    .childWrapper__6e9f8,
+    .circleIcon__5bc7e {
         color: green;
     }
 }
@@ -414,20 +436,21 @@ color: white!important;
 }
 
 .lowerBadge_cc5dd2 {
-            rotate: 30deg;
-            box-sizing: border-box;
+    rotate: 30deg;
+    box-sizing: border-box;
     color: var(--white);
     flex: 0 0 auto;
-        background-color: #ea483e;
-        aspect-ratio: 1;
+    background-color: #ea483e;
+    aspect-ratio: 1;
+
     .numberBadge__2b1f5 {
         border-radius: 0px;
         rotate: -30deg;
-        background: transparent!important;
+        background: transparent !important;
         height: 100%;
     }
 }
 
 .svg_cc5dd2 foreignObject {
-    mask: none!important;
+    mask: none !important;
 }
