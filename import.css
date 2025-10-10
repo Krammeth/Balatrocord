@@ -766,3 +766,69 @@ button {
         color: white;
     }
 }
+
+
+[id*="77"].messageContent_c19a55::before {
+    /* polychrome */
+    content: "";
+    position: absolute;
+    background: linear-gradient(in hsl longer hue 45deg, red 0 100%);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+[id*="33"].messageContent_c19a55:not([id*="77"])::before {
+    /* foil */
+    content: "";
+    position: absolute;
+    background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.00) 25.023711919784546deg, #FFF 59.54857528209686deg, rgba(255, 255, 255, 0.00) 96.1043643951416deg, rgba(255, 255, 255, 0.80) 130.11407732963562deg, rgba(255, 255, 255, 0.00) 155.8091139793396deg, rgba(255, 255, 255, 0.80) 180.30051469802856deg, rgba(255, 255, 255, 0.00) 207.1899175643921deg, #FFF 244.46277379989624deg, rgba(255, 255, 255, 0.00) 274.6606492996216deg, #FFF 304.0280270576477deg, rgba(255, 255, 255, 0.00) 330.30075788497925deg, #FFF 359.5523500442505deg), radial-gradient(73.62% 50% at 50% 50%, rgba(255, 255, 255, 0.00) 19%, rgba(255, 255, 255, 0.20) 20%, rgba(255, 255, 255, 0.00) 21%, rgba(255, 255, 255, 0.00) 39%, #FFF 40%, rgba(255, 255, 255, 0.00) 41%, rgba(255, 255, 255, 0.00) 59%, rgba(255, 255, 255, 0.80) 59.98%, rgba(255, 255, 255, 0.00) 61%, rgba(255, 255, 255, 0.00) 78%, rgba(255, 255, 255, 0.50) 79.23%, rgba(255, 255, 255, 0.00) 80%, rgba(255, 255, 255, 0.00) 89%, rgba(255, 255, 255, 0.70) 90%, rgba(255, 255, 255, 0.00) 91%, rgba(255, 255, 255, 0.00) 97%, rgba(255, 255, 255, 0.90) 98.11%, rgba(255, 255, 255, 0.00) 99%), rgba(64, 0, 255, 0.35);
+    background-blend-mode: soft-light, overlay, normal;
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 1;
+    align-self: center;
+    justify-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+[id*="000"].messageContent_c19a55 {
+    /* negative */
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.messageContent_c19a55 {
+    overflow: visible;
+    position: relative;
+    z-index: unset !important;
+}
+
+
+
+
+
+
+
+/* .message__5126c:has(>.container_b7e1cb>.reactions__23977>div>.reaction__23977>.reactionInner__23977>div>img.emoji[alt="🔴"]) {
+    .messageContent_c19a55::after {
+        position: absolute;
+        content: "";
+        width: 48px;
+        height: 48px;
+        background: red;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+    }
+
+    &:hover .messageContent_c19a55::after {
+        opacity: 0.5;
+    }
+} */
