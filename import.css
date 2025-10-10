@@ -96,9 +96,9 @@ li.messageListItem__5126c[id$="7"] .contents_c19a55 .messageContent_c19a55 {
             #ffe6bc,
             #ffd081,
             #ffe6bc,
-            #ffd081);
-    /* background-size: 200% 100%; */
-    /* animation: horizontalGradient 2s linear infinite; */
+            #ffd081, #ffe6bc);
+    background-size: 200% 100%;
+    animation: horizontalGradient 10s linear infinite;
     border: 4px inset #fac977;
     outline: 1px solid #af843e;
 
