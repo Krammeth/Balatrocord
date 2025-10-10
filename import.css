@@ -279,6 +279,10 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
 /* left tab */
 .sidebar_c48ade {
     overflow: visible;
+
+    &::after {
+        display: none;
+    }
 }
 
 /* Guilds */
@@ -314,9 +318,11 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
 .sidebarList_c48ade {
     position: relative;
     top: -32px;
+    height: calc(100% + 32px);
     border-radius: unset;
     border: 3px solid #EA483E;
     border-top: unset;
+    border-bottom: unset;
     background: #2E3A3C;
 
     >.privateChannels__35e86,
