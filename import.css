@@ -93,10 +93,6 @@
 
 li.messageListItem__5126c .contents_c19a55>.messageContent_c19a55 {
     clip-path: polygon(0% 9px, 3px 9px, 3px 3px, 9px 3px, 9px 0%, calc(100% - 9px) 0%, calc(100% - 9px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 9px, 100% 9px, 100% calc(100% - 9px), calc(100% - 3px) calc(100% - 9px), calc(100% - 3px) calc(100% - 3px), calc(100% - 9px) calc(100% - 3px), calc(100% - 9px) 100%, 9px 100%, 9px calc(100% - 3px), 3px calc(100% - 3px), 3px calc(100% - 9px), 0% calc(100% - 9px));
-    
-    &:hover {
-        transform: skew(350deg, 355deg);
-    }
 }
 
 li.messageListItem__5126c[id$="7"] .contents_c19a55 .messageContent_c19a55 {
@@ -193,6 +189,11 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
     display: none !important;
 }
 
+.messageListItem__5126c[data-is-self="false"] {
+    .message__5126c .contents_c19a55>.messageContent_c19a55:hover {
+        transform: skew(10deg, 5deg);
+    }
+}
 
 .messageListItem__5126c[data-is-self="true"] {
     align-items: end;
@@ -206,6 +207,10 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
 
         .contents_c19a55 {
             justify-items: end;
+
+            >.messageContent_c19a55:hover {
+                transform: skew(350deg, 355deg);
+            }
         }
 
         .avatar_c19a55 {
