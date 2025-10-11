@@ -93,6 +93,10 @@
 
 li.messageListItem__5126c .contents_c19a55>.messageContent_c19a55 {
     clip-path: polygon(0% 9px, 3px 9px, 3px 3px, 9px 3px, 9px 0%, calc(100% - 9px) 0%, calc(100% - 9px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 9px, 100% 9px, 100% calc(100% - 9px), calc(100% - 3px) calc(100% - 9px), calc(100% - 3px) calc(100% - 3px), calc(100% - 9px) calc(100% - 3px), calc(100% - 9px) 100%, 9px 100%, 9px calc(100% - 3px), 3px calc(100% - 3px), 3px calc(100% - 9px), 0% calc(100% - 9px));
+    
+    &:hover {
+        transform: skew(350deg, 355deg);
+    }
 }
 
 li.messageListItem__5126c[id$="7"] .contents_c19a55 .messageContent_c19a55 {
