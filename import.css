@@ -363,7 +363,7 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
                     filter: drop-shadow(0 4px 0 #944500ba);
 
                     >.link__972a0 {
-                        padding: 8px 12px;
+                        padding: 8px;
                         margin: 4px;
                         z-index: 2;
                         overflow: visible;
@@ -390,6 +390,14 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
                             >.content__20a53 {
                                 display: none;
                             }
+                        }
+                    }
+
+                    &:hover {
+                        background: unset;
+
+                        >.link__972a0 {
+                            background: #A05B00;
                         }
                     }
                 }
