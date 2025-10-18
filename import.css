@@ -395,9 +395,10 @@ li.messageListItem__5126c[id$="6"] .contents_c19a55 .messageContent_c19a55 {
 
                     &:hover {
                         background: unset;
+                        filter: drop-shadow(0 4px 0 #7C3E08ba);
 
                         >.link__972a0 {
-                            background: #A05B00;
+                            filter: brightness(0.9);
                         }
                     }
                 }
